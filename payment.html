@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/logo.ico" type="image/x-icon">
+    <title>Thanh toán</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="./css/payment.css">
+    <script src="./js/payment.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"> <i class="fas fa-shopping-basket"></i> O&F Mart </a>
+
+        <div class="icons">
+            <a href="./cash.html"><div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <a href="./login.html"><div class="fas fa-user" id="login-btn"></div></a>
+        </div>
+
+    </header>
+    <main>
+        <section class="cart-ship-pay">
+            <div class="cart">
+                <h2>Đơn hàng</h2>
+                <ul id="cart-items">
+                  <li><img src="./image/cart-img-1.png" alt=""><div class="cart-item-info"><span>Dưa hấu</span><span>5000 VNĐ</span></div></li>
+                  <li><img src="./image/cart-img-2.png" alt=""><div class="cart-item-info"><span>Hành tây</span><span>5000 VNĐ</span></div></li>
+                  <li><img src="./image/cart-img-3.png" alt=""><div class="cart-item-info"><span>Gà</span><span>5000 VNĐ</span></div></li>
+                  <li><img src="./image/feature-img-2.png" alt=""><div class="cart-item-info"><span>Ship</span><span>5000 VNĐ</span></div></li>
+              </ul>
+                <p>Tổng cộng: <span id="total-amount">0</span> VNĐ</p>
+            </div>
+            <div class="ship-pay">
+              <h2 style="margin-bottom: 1rem;">Vận chuyển</h2>
+              <div class="choose_ship_method">
+                <div class="shipping-method">
+                  <input type="radio" id="standardShipping" name="shipping" value="standard">
+                  <label for="standardShipping">Giao hàng tiêu chuẩn (3-5 ngày)</label>
+                </div>
+      
+                <div class="shipping-method">
+                  <input type="radio" id="expressShipping" name="shipping" value="express">
+                  <label for="expressShipping">Giao hàng nhanh (1-2 ngày)</label>
+                </div>
+      
+                <div class="shipping-method">
+                  <input type="radio" id="sameDayShipping" name="shipping" value="sameDay">
+                  <label for="sameDayShipping">Giao hàng trong ngày</label>
+                </div>
+              </div>
+            </div>
+        </section>    
+        <section class="payment-form">
+            <h2>Thông tin thanh toán</h2>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <img src="./image/payment.png" alt="" style="margin: 0 0 1rem 0;">
+
+                <div class="form-group">
+                    <label for="card">Số thẻ:</label>
+                    <input type="text" id="card" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="venue">Địa chỉ:</label>
+                    <input type="text" id="venue" required>
+                </div>
+
+                <div class="form-detail">
+                    <label for="detail">Ghi chú:</label>
+                    <textarea name="note" id="note" class="textarea-note"></textarea>
+                </div>
+
+                <button type="submit">Thanh toán</button>
+            </form>
+        </section>
+    </main>
+
+    <section class="footer">
+        <div class="box-container">
+          <div class="box">
+            <h3>groco <i class="fas fa-shopping-basket"></i></h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam,
+              saepe.
+            </p>
+            <div class="share">
+              <a
+                href="https://www.facebook.com/coder.hai/"
+                class="fab fa-facebook-f"></a>
+              <a
+                href="https://www.facebook.com/coder.hai/"
+                class="fab fa-twitter"></a>
+              <a
+                href="https://www.facebook.com/coder.hai/"
+                class="fab fa-instagram"></a>
+              <a
+                href="https://www.linkedin.com/in/haicoder/"
+                class="fab fa-linkedin"></a>
+            </div>
+          </div>
+  
+          <div class="box">
+            <h3>contact info</h3>
+            <a href="" class="links">
+              <i class="fas fa-phone"></i> +123-456-7890
+            </a>
+            <a href="#" class="links">
+              <i class="fas fa-phone"></i> +111-222-3333
+            </a>
+            <a href="#" class="links">
+              <i class="fas fa-envelope"></i> TI@gmail.com
+            </a>
+            <a href="#" class="links">
+              <i class="fas fa-map-marker-alt"></i> mumbai, india - 400104
+            </a>
+          </div>
+  
+          <div class="box">
+            <h3>quick links</h3>
+            <a href="./index.html" class="links">
+              <i class="fas fa-arrow-right"></i> home
+            </a>
+            <a href="#features" class="links">
+              <i class="fas fa-arrow-right"></i> features
+            </a>
+            <a href="#products" class="links">
+              <i class="fas fa-arrow-right"></i> products
+            </a>
+            <a href="#sale" class="links">
+              <i class="fas fa-arrow-right"></i> sale
+            </a>
+            <a href="#review" class="links">
+              <i class="fas fa-arrow-right"></i> review
+            </a>
+            <a href="#blogs" class="links">
+              <i class="fas fa-arrow-right"></i> blogs
+            </a>
+          </div>
+  
+          <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email" />
+            <input type="submit" value="subscribe" class="btn" />
+            <img src="image/payment.png" class="payment-img" alt="" />
+          </div>
+        </div>
+  
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./image/logo.ico" type="image/x-icon">
+    <title>O&F Mart</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <a href="#" class="logo">
+        <i class="fas fa-shopping-basket"></i> O&F Mart
+      </a>
+
+      <nav class="navbar">
+        <a href="#home">Trang chủ</a>
+        <a href="./product.html">Sản phẩm</a>
+        <a href="./about-us.html">Giới thiệu</a>
+        <a href="./review.html">Đánh giá</a>
+        <a href="./blogs.html">Blogs</a>
+        <a href="./contact.html">Liên hệ</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <a href="./login.html"
+          ><div class="fas fa-user" id="login-btn"></div
+        ></a>
+      </div>
+
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/cart-img-1.png" alt="" />
+          <div class="content">
+            <h3>dưa hấu</h3>
+            <span class="price">20.000đ</span>
+            <span class="quantity">số lượng : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/cart-img-2.png" alt="" />
+          <div class="content">
+            <h3>hành tây 1kg</h3>
+            <span class="price">40.000đ</span>
+            <span class="quantity">số lượng : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/cart-img-3.png" alt="" />
+          <div class="content">
+            <h3>gà ta (1,8 kg)</h3>
+            <span class="price">280.000</span>
+            <span class="quantity">số lượng : 1</span>
+          </div>
+        </div>
+        <div class="total">Tổng :340.000đ</div>
+        <a href="./cash.html" class="btn">giỏ hàng</a>
+        <a href="./payment.html" class="btn">Thanh toán</a>
+      </div>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3><span>organic </span> and <span>fresh</span> sản phẩm tươi ngon dành cho mọi nhà</h3>
+        <p>
+          Chúng tôi luôn cung cấp tất cả các sản phẩm tươi và sạch , hoàn toàn
+          hữu cơ an toàn cho cả gia đình bạn. Hãy mua sắm ngay thôi !
+        </p>
+        <a href="#" class="btn">Mua ngay</a>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- features section starts  -->
+
+    <section class="features" id="features">
+      <h1 class="heading">our <span>features</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="image/feature-img-1.png" alt="" />
+          <h3>sạch và hữu cơ</h3>
+          <p>
+            Luôn đảm bảo thực phẩm tươi sạch , có kiểm định và hoàn toàn 100%
+            hữu cơ
+          </p>
+          <a href="#" class="btn">đọc thêm</a>
+        </div>
+
+        <div class="box">
+          <img src="image/feature-img-2.png" alt="" />
+          <h3>miễn phí vận chuyển</h3>
+          <p>Miễn phí giao hàng tới 5km. Hãy bắt đầu mua sắm ngay thôi</p>
+          <a href="#" class="btn">đọc thêm</a>
+        </div>
+
+        <div class="box">
+          <img src="image/feature-img-3.png" alt="" />
+          <h3>dễ dàng thanh toán</h3>
+          <p>
+            Chúng tôi liên kết với tất cả các cổng thanh toán điện tử giúp dễ
+            dàng thanh toán.
+          </p>
+          <a href="#" class="btn">đọc thêm</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- features section ends -->
+
+    <!-- products section starts  -->
+
+    <section class="products" id="products">
+      <h1 class="heading">our <span>products</span></h1>
+
+      <a href="./product.html">
+        <div class="swiper product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+              <img src="image/product-1.png" alt="" />
+              <h3>cam sành hữu cơ</h3>
+              <div class="price">55.000đ/kg</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">thêm vào giỏ hàng</a>
+            </div>
+            <div class="swiper-slide box">
+              <img src="image/product-2.png" alt="" />
+              <h3>Hành tím</h3>
+              <div class="price">60.000đ/kg</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">thêm vào giỏ hàng</a>
+            </div>
+            <div class="swiper-slide box">
+              <img src="image/product-3.png" alt="" />
+              <h3>thịt bò</h3>
+              <div class="price">180.000đ/kg</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">thêm vào giỏ hàng</a>
+            </div>
+            <div class="swiper-slide box">
+              <img src="image/product-4.png" alt="" />
+              <h3>rau bắp cải</h3>
+              <div class="price">15.000đ/kg</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="btn">thêm vào giỏ hàng</a>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="image/product-5.png" alt="" />
+            <h3>khoai tây</h3>
+            <div class="price">25.000/kg</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">thêm vào giỏ hàng</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/product-6.png" alt="" />
+            <h3>bơ</h3>
+            <div class="price">150.000đ/kg</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">thêm vào giỏ hàng</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/product-7.png" alt="" />
+            <h3>cà rốt</h3>
+            <div class="price">30.000đ/kg</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">thêm vào giỏ hàng</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/product-8.png" alt="" />
+            <h3>chanh</h3>
+            <div class="price">38.000đ/kg</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">thêm vào giỏ hàng</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- products section ends -->
+
+    <!-- categories section starts  -->
+
+    <section class="sale" id="sale">
+      <h1 class="heading">product <span>sale</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="image/cat-1.png" alt="" />
+          <h3>Rau xanh</h3>
+          <p>Giảm giá tới 45%</p>
+          <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+          <img src="image/cat-2.png" alt="" />
+          <h3>Hoa quả tươi</h3>
+          <p>Giảm giá tới 20%</p>
+          <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+          <img src="image/cat-3.png" alt="" />
+          <h3>Sữa</h3>
+          <p>Giảm giá tới 10%</p>
+          <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+          <img src="image/cat-4.png" alt="" />
+          <h3>Thịt hữu cơ</h3>
+          <p>Giảm giá tới 30%</p>
+          <a href="#" class="btn">shop now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- categories section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+      <h1 class="heading">customer's <span>review</span></h1>
+
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="image/pic-1.png" alt="" />
+            <p>
+              Giao hàng rất nhanh, Dicta exercitationem sapiente asperiores.
+            </p>
+            <h3>john deo</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/pic-2.png" alt="" />
+            <p>Sản phẩm dùng rất tốt , đúng như hình ảnh quảng cáo.</p>
+            <h3>Jerry</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/pic-3.png" alt="" />
+            <p>giá cả phải chăng so với chất lượng của sản phẩm.</p>
+            <h3>jack</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/pic-4.png" alt="" />
+            <p>người gia hàng rất nhiệt tình và thân thiện.</p>
+            <h3>leora</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- blogs section starts  -->
+
+    <section class="blogs" id="blogs">
+      <h1 class="heading">our <span>blogs</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="image/blog-1.jpg" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"> <i class="fas fa-user"></i> by Huy Tiệp </a>
+              <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+            </div>
+            <h3>Mẹo chọn hoa quả thật tươi và ngon mà bạn cần phải biết</h3>
+            <p>
+              Một số cách chọn hoa quả tươi ngon được các mẹ nội trợ đúc kết
+              lại...
+            </p>
+            <a href="./blogs.html" class="btn">đọc thêm</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="image/blog-2.jpg" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"> <i class="fas fa-user"></i> by Việt Hoàng </a>
+              <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+            </div>
+            <h3>Rau củ quả sạch từ O&F Mart , lựa chọn cho mọi gia đình</h3>
+            <p>
+              Cửa hàng O&F Mart chuyên cung cấp các loại mặt hàng sạch và thực
+              sự hữu cơ...
+            </p>
+            <a href="./blogs.html" class="btn">đọc thêm</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="image/blog-3.jpg" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"> <i class="fas fa-user"></i> by Nam Hải </a>
+              <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+            </div>
+            <h3>Những món ngon làm từ xoài khiến bạn không thể ngừng đũa</h3>
+            <p>
+              Món ngon làm từ xoài luôn khiến người ta mê mẩn vì sự thơm ngon...
+            </p>
+            <a href="./blogs.html" class="btn">đọc thêm</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div>
+      <button onclick="scrollToTop()" id="scrollToTopBtn" title="Lên đầu trang"><i class="fa-solid fa-circle-up" style="font-size: 2rem; color:rgba(243, 237, 237, 0.8)"></i></button>
+    </div>
+    <!-- blogs section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>O&F Mart <i class="fas fa-shopping-basket"></i></h3>
+          <p>
+            Luôn cam kết mang lại những thực phẩm tươi ngon , hoàn toàn được
+            nuôi trồng theo phương pháp organic để mang lại cho khách hàng một
+            cuộc sống xanh!
+          </p>
+          <div class="share">
+            <a
+              href="https://www.facebook.com/profile.php?id=100018045165228"
+              class="fab fa-facebook-f"></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100018045165228"
+              class="fab fa-twitter"></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100018045165228"
+              class="fab fa-instagram"></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100018045165228"
+              class="fab fa-linkedin"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>thông tin liên hệ</h3>
+          <a href="" class="links">
+            <i class="fas fa-phone"></i> +123-456-7890
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-phone"></i> +111-222-3333
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-envelope"></i> O&Fmart@gmail.com
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-map-marker-alt"></i> Yên Nghĩa, Hà Đông, Hà Nội,
+            Việt Nam
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>Liên kết nhanh</h3>
+          <a href="./index.html" class="links">
+            <i class="fas fa-arrow-right"></i> home
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> features
+          </a>
+          <a href="./product.html" class="links">
+            <i class="fas fa-arrow-right"></i> products
+          </a>
+          <a href="./about-us.html" class="links">
+            <i class="fas fa-arrow-right"></i> About Us
+          </a>
+          <a href="./review.html" class="links">
+            <i class="fas fa-arrow-right"></i> review
+          </a>
+          <a href="./blogs.html" class="links">
+            <i class="fas fa-arrow-right"></i> blogs
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>Bản Tin</h3>
+          <p>đăng kí để nhận cập nhật mới nhất từ chúng tôi</p>
+          <input type="email" placeholder="your email" class="email" />
+          <input type="submit" value="subscribe" class="btn" />
+          <img src="image/payment.png" class="payment-img" alt="" />
+        </div>
+      </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script>
+      window.addEventListener('scroll', function() {
+      var header = document.querySelector('.header');
+      header.classList.toggle('sticky', window.scrollY > 0);
+      });
+  
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      var rootElement = document.documentElement;
+  
+      function scrollToTop() {
+      rootElement.scrollTo({
+          top: 0,
+          behavior: "smooth"
+      });
+      }
+  
+      window.addEventListener("scroll", function() {
+      if (window.scrollY > 500) {
+          scrollToTopBtn.style.display = "block";
+      } else {
+          scrollToTopBtn.style.display = "none";
+      }
+      });
+  </script>
+  </body>
+</html>

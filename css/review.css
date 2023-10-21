@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --orange:#ff7800;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+
+html{
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+
+body {
+    background: #eee;
+}
+
+
+section{
+    padding:2rem 9%;
+}
+
+
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover{
+    background: var(--orange);
+    color:#fff;
+}
+
+.header{
+    position: fixed;
+    top:0; left:0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+    box-shadow: var(--box-shadow);
+    background-color: var(--orange);
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:white;
+    /* padding-right: ; */
+}
+
+.header .logo i{
+    color:white;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin:0 1rem;
+    color:var(--black);
+}
+
+.header .navbar a:hover{
+    color:white;
+}
+
+.header .icons {
+    display: flex;
+}
+
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color:var(--black);
+    font-size: 2rem;
+    margin-left: .3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .icons div:hover{
+    background: var(--orange);
+    color:#fff;
+}
+
+
+
+.slide-show {
+    overflow: hidden; 
+}
+
+.slideShowImg {
+    display: none;
+}
+
+.list-images {
+    display: flex;
+}
+
+
+.container-review .review-slider{
+    padding:2rem;
+}
+
+.container-review .review-slider .swiper-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+.container-review .review-slider a{
+    width: 24%;
+}
+
+.container-review .review-slider .box{
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding:3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    /* box-shadow: var(--box-shadow); */
+    transition: .2s linear;
+    width: 100%;
+}
+
+.container-review .review-slider .box:hover{
+    outline:var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.container-review .review-slider .box img{
+    height:10rem;
+    width:10rem;
+    border-radius: 50%;
+}
+
+.container-review .review-slider .box p{
+    padding:1rem 0;
+    line-height: 1.8;
+    color:var(--light-color);
+    font-size: 1.5rem;
+}
+
+.container-review .review-slider .box h3{
+    padding-bottom: .5rem;
+    color:var(--black);
+    font-size: 2.2rem;
+}
+
+.container-review .review-slider .box .stars i{
+    color:var(--orange);
+    font-size: 1.7rem;
+}
+
+
+
+
+.product_page-link ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+.nav-link{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.page-item{
+    margin: 20px 15px 10px 10px;
+/* border-radius: 10px; */
+    font-size: 15px;
+    border:1px solid gray;
+    border-radius: 10px;
+}
+
+.page-item:hover{
+    background-color: var(--orange);
+    color:white;
+}
+
+.page-item:hover a{
+    /* background-color: var(--orange); */
+    color:white;
+}
+
+.page-link{
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
+    /* justify-content:space-between; */
+    padding: 10px;
+}
+
+
+
+
+
+
+@media only screen and (max-width:740px){
+
+    .header{
+        padding:2rem 2%;
+    }
+    
+
+    .container-review .review-slider a{
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+@media only screen and (min-width:740px) and (max-width:1024px){
+    section{
+        padding:0;
+    }
+
+    .header{
+        padding:2rem 2%;
+    }
+    
+    .container-review .review-slider .swiper-wrapper{
+        margin: 0;
+    }
+    .container-review .review-slider a{
+        width: 49%;
+        margin-top: 2rem;
+    }
+}

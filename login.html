@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./image/logo.ico" type="image/x-icon">
+    <title>Login</title>
+    <meta name="description" content="Login - Register Template">
+    <meta name="author" content="Lorenzo Angelino aka MrLolok">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login-resigter.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            background-color: #F2F2F2;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container-login">
+        <div id="title">
+            <i class="material-icons lock">lock</i> Đăng nhập
+        </div>
+
+        <form>
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">face</i>
+                </div>
+                <input id="username" placeholder="Tên đăng nhập" type="text" required class="validate" autocomplete="off">
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">vpn_key</i>
+                </div>
+                <input id="password" placeholder="Mật khẩu" type="password" required class="validate" autocomplete="off">
+            </div>
+
+            <div class="remember-me">
+                <input type="checkbox">
+                <span style="color: #757575">Lưu mật khẩu</span>
+            </div>
+
+            <input type="submit" value="Log In" />
+        </form>
+
+        <div class="forgot-password">
+            <a href="#">Quên mật khẩu?</a>
+        </div>
+        <div class="homepage">
+            <a href="./index.html">Home page</a>
+        </div>
+
+        <div class="register">
+            <span style="color: #657575">Bạn chưa có tài khoản?</span>
+            <a href="./register.html"><button id="register-link">Đăng kí ngay</button></a>
+        </div>
+    </div>
+</body>
+
+</html>

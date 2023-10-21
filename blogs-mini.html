@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/logo.ico" type="image/x-icon">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/blogs-mini.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu">
+            <a href="#" class="logo"> <i class="fas fa-shopping-basket" style="font-size: 4rem;"></i> Blogs</a>
+            <nav class="navbar">
+                <a href="./index.html">Trang chủ</a>
+                <a href="./product.html">Sản phẩm</a>
+                <a href="./about-us.html">Giới thiệu</a>
+                <a href="./review.html">Đánh giá</a>
+                <a href="./blogs.html">Blogs</a>
+            </nav>
+            <div class="icons">
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                <a href="./login.html"><div class="fas fa-user" id="login-btn"></div></a>
+            </div>
+        </div>
+    </header>
+    <div class="stories">
+        <h1>Thực phẩm Organic mang lại những lợi ích gì đến sức khỏe của chúng ta</h1>
+        <div class="info">
+            <a href="">
+                <img src="./image/pic-1.png" alt="">
+            </a>
+            <div class="author">
+                <a href=""><p>NamHai</p></a>
+                <p>Oct 14, 2023 - 15 min read</p>
+            </div>
+        </div>
+        <a href=""><img src="./image/chua_xac_dinh_8.jpg" alt=""></a>
+    </div>
+
+    <div class="content">
+        <div class="left">
+            <a href="" class="icon"><i class="fa-solid fa-link"></i></a>
+            <a href="" class="icon"><i class="fa-brands fa-line"></i></a>
+            <a href="" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="" class="icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class="icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class="icon"><i class="fa-solid fa-print"></i></a>
+        </div>
+        <div class="main">
+            <div class="half-content">
+                <!-- Phần nội dung ban đầu, chỉ hiển thị một nửa -->
+                <!-- ... -->
+                <div class="main-1">
+                    <h2>1. Thực phẩm Organic là gì?</h2>
+                    <p>Thực phẩm organic là <span class="bolder">thực phẩm hữu cơ</span> có tên gọi tiếng anh là organic food. Là thực phẩm đạt chuẩn chứng nhận của các tổ chức uy tín trên thị trường về thực phẩm như: USDA (Hoa Kỳ), NASAA (Úc), Control Union - Là đơn vị đánh giá và cấp phép tiêu chuẩn Organic Châu Âu tại Việt Nam. </p>
+    
+                    <p>Dù tiêu chuẩn Organic của bất kỳ quốc gia nào thì cũng phải cần đạt các tiêu chuẩn khắt khe về: nguyên liệu, công thức, quy trình sản xuất,...Mục tiêu cuối cùng là để đảm bảo tính an toàn, tự nhiên và chất lượng của sản phẩm.</p>
+                    <p>Để được gọi là thực phẩm hữu cơ, nguồn thức ăn phải đạt những chuẩn 3K như sau:</p>    
+                    <ul>
+                        <li>Không sử dụng hương liệu, phẩm màu, chất bảo quản, chất làm đặc.</li>
+                        <li>Không sử dụng hóa chất và hooc môn tăng trưởng.</li>
+                        <li>Không sử dụng nguyên liệu biến đổi gen (Non GMO), không bị chiếu xạ tiệt trùng…</li>
+                    </ul>
+                    <img src="./image/blog-mini 1.jpg" alt="">
+                </div>
+                
+                <div class="main-2">
+                    <h2>2. Thực phẩm hữu cơ có những loại nào?</h2>
+                    <p>Thực phẩm organic cũng chia làm hai loại: <span class="bloder">thực vật</span> và <span class="bloder">động vật</span>.</p>
+                    <p>Điểm chung của thực phẩm organic là quá trình chăm sóc rất cẩn thận, tỉ mỉ, kì công và một cách tự nhiên hóa.</p>
+                    <ul>
+                        <li>Các loại rau, quả: được nuôi trồng bằng phân bón thiên nhiên (phân bón hữu cơ), phòng trừ sâu bệnh bằng những cách thủ công truyền thống.
+                        </li>
+                        <li>Thịt, trứng, sữa: Theo một chuỗi thức ăn, gia súc được cho ăn rau cỏ organic, không ăn thực phẩm GMO, không tiêm thuốc tăng trưởng, ngừa bệnh bằng biện pháp tự nhiên và thường xuyên thả rông ngoài tự nhiên.</li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+            <button onclick="showFullContent()" id="showMoreBtn" ><i class="fa-solid fa-circle-down fa-beat-fade" style="padding-right: 1rem;"></i>  Đọc thêm</button>
+            <div class="full-content" style="display: none;">
+                <!-- Phần nội dung còn lại của blog -->
+                <!-- ... -->
+                <div class="main-3">
+                    <h2>3. Vì sao bạn nên chọn thực phẩm hữu cơ?</h2>
+                    <img src="./image/chua_xac_dinh_5.jpg" alt="">
+                    <p>Thực phẩm hữu cơ được xem là nguồn thực phẩm lý tưởng và an toàn cho bữa ăn gia đình hằng ngày.</p>
+                    <p>Nếu bạn nghĩ rằng thực phẩm hữu cơ chỉ có rau xanh thì hoàn toàn sai lầm nhé. Ngoài rau, loại thực phẩm này còn có thịt, cá, trứng, sữa,.. những đồ chế biến sẵn như bánh quy, ngũ cốc,.. và điều đặc biệt ở những sản phẩm này đó là không có chất phụ gia thực phẩm nhân tạo như chất bảo quản, chất tạo màu.</p>
+                    <p>Không đơn thuần là phương pháp nuôi trồng thực phẩm nói không với hóa chất, thực phẩm hữu cơ còn là một mô hình nông trại giúp cân bằng hệ sinh thái và bảo tồn sự đa dạng của sinh học. Các sản phẩm muốn được công nhận là thực phẩm hữu cơ phải trải qua quá trình kiểm tra nghiêm ngặt.</p>
+                </div>
+                <div class="main-4">
+                    <h2>4. Lợi ích của thực phẩm hữu cơ?</h2>
+                    <ul>
+                        <li>
+                            <span class="bloder">Độ tươi ngon của sản phẩm</span>
+                            <div>
+                                <p>Thực phẩm được tươi ngon hơn vì sản phẩm chỉ có thể bán trong thời gian ngắn, không để lâu vì không chứa chất bảo quản nên thực phẩm sẽ nhanh chóng hư hơn.</p>
+                                <p>Tuy nhiên, vì độ tươi ngon, nên hàm lượng dinh dưỡng vitamin và khoáng chất cũng cao hơn 15 % so với thực phẩm thông thường.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bloder">An toàn sức khỏe cho trẻ</span>
+                            <div>
+                                <p>Sử dụng thực phẩm organic, bạn sẽ hạn chế được những rủi ro trẻ bị ngộ độc thực phẩm hoặc dung nạp một số chất độc từ thuốc trừ sâu gây ảnh hưởng đến quá trình phát triển sau này.</p>
+                                <p>Theo một nghiên cứu ở Mỹ, hơn 80 % photpho trong cơ thể chúng ta được tìm thấy từ thức ăn có chứa thuốc trừ sâu.</p>
+                                <p>Chính vì thế, thực phẩm organic sẽ đảm bảo cho trẻ một sự phát triển an toàn và lành mạnh nhất.</p>
+                                <img src="./image/blog-mini 4.jpg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <span class="bloder">Mức độ nitrat trong thực phẩm hữu cơ thấp hơn</span>
+                            <p>Các nghiên cứu đã chứng minh, nồng độ nitrat cao trong các thực phẩm organic thấp hơn 30% so với các thực phẩm thông thường. Nồng độ nitrat cao chính là nguyên nhân làm tăng nguy cơ mắc một số bệnh ung thư, chúng còn ảnh hưởng đến khả năng vận chuyển oxy đến các tế bào trong cơ thể của trẻ.</p>
+                        </li>
+                        <li>
+                            <span class="bloder">Sữa, thịt hữu cơ chứa acid béo có lợi cao hơn</span>
+                            <p>Sữa hữu cơ và các sản phẩm từ sữa chứa axit béo omega 3, sắt, vitamin E và một số Carotenoids cao hơn sản phẩm thường, giúp làm giảm nguy cơ mắc các bệnh về tim mạch.</p>
+                        </li>
+                        <li>
+                            <span class="bloder">Tăng cường hệ miễn dịch</span>
+                            <p>Nếu như thực phẩm bình thường bị tiêm vào các chất biến đổi gen (GMO) thì thực phẩm organic lại nói không với điều đó.</p>
+                            <p>Đây cũng chính là lí do thực phẩm hữu cơ giúp bảo vệ hệ thống miễn dịch của bạn được khỏe mạnh.</p>
+                            <img src="./image/blog-mini 4-2.jpg" alt="">
+                        </li>
+                        <li>
+                            <span class="bloder">Bảo vệ sức khỏe tim mạch</span>
+                            <p>Những động vật được nuôi theo qui trình chuẩn organic sẽ được chăn thả ngoài đồng cỏ, điều này làm tăng lượng CLA ( axit linoleic liên hợp) trong các sản phẩm của động vật.</p>
+                            <p>Loại axit béo có lợi này là chất dinh dưỡng cần thiết bảo vệ tim mạch và cũng thường được tìm thấy trong sữa mẹ, thịt động vật.</p>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="main-5">
+                    <h2>5. Thực phẩm hữu cơ (Organic) khác thực phẩm thường như thế nào?</h2>
+                    <ul>
+                        <li>
+                            <span class="bloder">Thực phẩm hữu cơ bổ dưỡng hơn</span>
+                            <p>Theo kết quả nghiên cứu của bà Marion Nestle, hàm lượng vitamin và các khoáng chất có trong thực phẩm hữu cơ sẽ cao hơn so với thực phẩm thông thường. Dù chỉ là một lượng khá nhỏ nhưng nó cũng có khả năng làm tăng hệ miễn dịch, bảo vệ cơ thể khỏi những vi khuẩn gây bệnh và giảm được tình trạng ngộ độc do ăn phải những thực phẩm sử dụng phân bón hóa chất.</p>
+                        </li>
+                        <li>
+                            <span class="bloder">Mức độ nitrat trong thực phẩm hữu cơ thấp hơn</span>
+                            <p>Nitrat tồn tại tự nhiên trong mọi thực phẩm và là 1 phần quan trọng trong chế độ ăn hằng ngày nhưng khi hàm lượng nitrat vượt qua mức giới hạn, chúng sẽ trở thành một chất độc gây hại đến sức khỏe. Khi ăn phải thực phẩm có nồng độ nitrat quá cao có thể gây ngộ độc cấp tính như khó thở, tím tái,.. Khi thấm vào cơ thể lâu ngày, nó sẽ chuyển hóa thành nitrit, chất gây ung thư dạ dày, ung thư ruột.</p>
+                            <p>Hiểu được sự nguy hại đó, ngành nông nghiệp hữu cơ đã không sử dụng các chất hóa học để tránh lây nhiễm vào thực phẩm, gây ảnh hưởng đến người tiêu dùng. Và, các nghiên cứu tại Mỹ đã cho thấy mức độ nitrat có trong thực phẩm hữu cơ thấp hơn 30% so với những loại thực phẩm thông thường được trồng bằng phân bón hóa học.</p>
+                        </li>
+                        <li>
+                            <span class="bloder">Thực phẩm hữu cơ không phải là thực phẩm “trồng tại nhà”</span>
+                            <p>Nhiều người thường hay bị nhầm lẫn thực phẩm hữu cơ là thực phẩm sạch hay thực phẩm được trồng tại nhà. Nhưng trên thực tế, các khái niệm này hoàn toàn khác nhau. <span class="bloder">Thực phẩm sạch là những loại thực phẩm được gieo trồng theo quy trình sản xuất cho phép sử dụng thuốc trừ sâu và phân bón hóa học ở mức an toàn.</span> Còn thực phẩm tự trồng tại nhà không thể gọi là thực phẩm hữu cơ được vì loại thực phẩm này có yêu cầu cao về chất lượng và nguồn nước sử dụng.</p>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="main-6">
+                    <h2>6. Làm thế nào để chắc chắn đó là thực phẩm hữu cơ (Organic)?</h2>
+                    <img src="./image/blog-mini 3.jpg" alt="">
+                    <p>Hiểu được những lợi ích mà thực phẩm hữu cơ mang lại, đã không ít các cửa hàng nhỏ lẻ “lợi dụng” mác hữu cơ để kinh doanh nhằm nâng giá thành sản phẩm nhưng thực chất nó chỉ dừng lại ở sản phẩm sạch. Vậy để mua được thực phẩm hữu cơ đúng chuẩn, bạn cần làm gì?</p>
+                    <p>Trước hết, bạn phải đến những cửa hàng uy tín, có thương hiệu rõ ràng để chọn mua sản phẩm, tránh mua những mặt hàng trôi nổi, không rõ nguồn gốc, được bày bán tràn lan trên thị trường.</p>
+                    <p>Mặt khác, trên mỗi loại thực phẩm chuẩn hữu cơ đều có dán tem USDA (chứng nhận của bộ Nông Nghiệp Hoa Kỳ) đính kèm với nội dung khác nhau tùy thuộc vào thành phần hữu cơ có trong sản phẩm đó:</p>
+                    <ul>
+                        <li>
+                            <span><span class="bloder">100% hữu cơ:</span> Sản phẩm được làm hoàn toàn từ các thành phần hữu cơ</span>
+                        </li>
+                        <li>
+                            <span><span class="bloder">Hữu cơ:</span> Sản phẩm chứa ít nhất 95% thành phần là hữu cơ</span> 
+                        </li>
+                        <li>
+                            <span><span class="bloder">Được làm từ hữu cơ:</span> Ít nhất 70% thành phần là hữu cơ</span>
+                        </li>
+                            
+                    </ul>
+                    <p>Bên cạnh những loại tem thông dụng thường thấy ở thực phẩm Việt Nam, với một số loại trái cây nhập khẩu, bạn sẽ thấy nó xuất hiện thêm 1 kiểu tem organic với mã code có 5 số bắt đầu bằng số 9.</p>
+                    <p>Mỗi loại thực phẩm hữu cơ đều có một quy định riêng, nắm bắt được những nguyên tắc trên, chắc chắn bạn sẽ chọn mua được loại thực phẩm hữu cơ tươi ngon và đảm bảo an toàn, chất lượng. Hy vọng với những thông tin mà mình đã chia sẻ có thể giúp bạn hiểu rõ hơn về thực phẩm hữu cơ cũng như những điểm khác biệt giữa chúng và thực phẩm thường.</p>
+                </div>
+            </div>
+
+            
+            <div class="react">
+                <div class="react-left">
+                    <div>
+                        <img src="./image/pic-1.png" alt="">
+                        <p style="font-size: 1.5rem; padding: 3.5rem 0rem 0 .5rem;">63 đã tặng</p>
+                    </div>
+                    <a href="#" class="icon"><i class="fa-regular fa-star"></i> 30</a>
+                    <a href="#" class="icon"><i class="fa-regular fa-thumbs-up"></i> 20</a>
+                    <a href="#" class="icon"><i class="fa-solid fa-heart" style="color: red;"></i> 13</a>
+                </div>
+                <div class="react-right">
+                    <a href="" class="icon"><i class="fa-solid fa-link"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-line"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="icon"><i class="fa-solid fa-print"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="right">
+            <h2 style="font-size: 2.5rem; color: rgb(233, 43, 9);">Có thể bạn quan tâm: </h2>
+            <div class="box">
+                <a href="">
+                    <img src="./image/blog-1.jpg" alt="">
+                    <p>Cam</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="">
+                    <img src="./image/blog-2.jpg" alt="">
+                    <p>Rau củ</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="">
+                    <img src="./image/blog-3.jpg" alt="">
+                    <p>Rau củ</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="">
+                    <img src="./image/blog-4.jpg" alt="">
+                    <p>Mật ong</p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <button onclick="scrollToTop()" id="scrollToTopBtn" title="Lên đầu trang"><i class="fa-solid fa-circle-up" style="font-size: 2rem; color:rgba(243, 237, 237, 0.8)"></i></button>
+    </div>
+
+    <section class="footer">
+        <div class="box-container">
+          <div class="box">
+            <h3>O&F Mart <i class="fas fa-shopping-basket"></i></h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam,
+              saepe.
+            </p>
+            <div class="share">
+              <a
+                href=""
+                class="fab fa-facebook-f"></a>
+              <a
+                href=""
+                class="fab fa-twitter"></a>
+              <a
+                href=""
+                class="fab fa-instagram"></a>
+              <a
+                href=""
+                class="fab fa-linkedin"></a>
+            </div>
+          </div>
+  
+          <div class="box">
+            <h3>contact info</h3>
+            <a href="" class="links">
+              <i class="fas fa-phone"></i> +123-456-7890
+            </a>
+            <a href="#" class="links">
+              <i class="fas fa-phone"></i> +111-222-3333
+            </a>
+            <a href="#" class="links">
+              <i class="fas fa-envelope"></i> shaikhanas@gmail.com
+            </a>
+            <a href="#" class="links">
+              <i class="fas fa-map-marker-alt"></i> mumbai, india - 400104
+            </a>
+          </div>
+  
+          <div class="box">
+            <h3>quick links</h3>
+            <a href="./index.html" class="links">
+              <i class="fas fa-arrow-right"></i> Trang chủ
+            </a>
+            <a href="./product.html" class="links">
+              <i class="fas fa-arrow-right"></i> Sản phẩm
+            </a>
+            <a href="./review.html" class="links">
+              <i class="fas fa-arrow-right"></i> Đánh giá
+            </a>
+            <a href="./blogs.html" class="links">
+              <i class="fas fa-arrow-right"></i> Blogs
+            </a>
+            <a href="./blogs.html" class="links">
+              <i class="fas fa-arrow-right"></i> Liên hệ
+            </a>
+          </div>
+  
+          <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email" />
+            <input type="submit" value="subscribe" class="btn" />
+            <img src="image/payment.png" class="payment-img" alt="" />
+          </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener('scroll', function() {
+        var header = document.querySelector('.header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        var rootElement = document.documentElement;
+    
+        function scrollToTop() {
+        rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+        }
+    
+        window.addEventListener("scroll", function() {
+        if (window.scrollY > 500) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+        });
+
+        function showFullContent() {
+            var halfContent = document.querySelector('.half-content');
+            var fullContent = document.querySelector('.full-content');
+            var showMoreBtn = document.getElementById('showMoreBtn');
+    
+            if (fullContent.style.display === 'none') {
+                halfContent.style.display = 'none';
+                fullContent.style.display = 'block';
+                showMoreBtn.style.display = 'none';
+            }
+        }
+    </script>
+
+    
+</body>
+</html>

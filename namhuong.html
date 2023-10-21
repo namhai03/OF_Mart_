@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./image/logo.ico" type="image/x-icon">
+    <title>Nấm hương</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link rel="stylesheet" href="./css/caixoan.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <i class="fas fa-shopping-basket"></i> O&F Mart
+      </a>
+
+      <nav class="navbar">
+        <a href="./index.html">home</a>
+        <a href="./product.html">product</a>
+        <a href="./about-us.html">about us</a>
+        <a href="./blogs.html">blogs</a>
+        <a href="./review.html">review</a>
+        <a href="./contact.html">contact</a>
+      </nav>
+
+      <div class="icons">
+        <!-- <div class="fas fa-bars" id="menu-btn"></div> -->
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/cart-img-1.png" alt="" />
+          <div class="content">
+            <h3>dưa hấu</h3>
+            <span class="price">20.000đ</span>
+            <span class="quantity">số lượng : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/cart-img-2.png" alt="" />
+          <div class="content">
+            <h3>hành tây 1kg</h3>
+            <span class="price">40.000đ</span>
+            <span class="quantity">số lượng : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/cart-img-3.png" alt="" />
+          <div class="content">
+            <h3>gà ta (1,8 kg)</h3>
+            <span class="price">280.000</span>
+            <span class="quantity">số lượng : 1</span>
+          </div>
+        </div>
+        <div class="total">Tổng :340.000đ</div>
+        <a href="#" class="btn">Tiến hành thanh toán</a>
+      </div>
+
+      <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box" />
+        <input type="password" placeholder="your password" class="box" />
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn" />
+      </form>
+    </header>
+
+    <section class="product-container">
+      <div class="product-image" id="imageContainer">
+        <img
+          src="image/namhuong.png"
+          alt="Hình ảnh sản phẩm lớn"
+          id="largeImage" />
+        <div class="thumbnail-container">
+          <img
+            src="image/namhuong1.png"
+            alt="Ảnh nhỏ 1"
+            class="thumbnail"
+            onclick="changeImage('image/namhuong1.png')" />
+          <img
+            src="image/namhuong2.png"
+            alt="Ảnh nhỏ 2"
+            class="thumbnail"
+            onclick="changeImage('image/namhuong2.png')" />
+          <img
+            src="image/namhuong3.png"
+            alt="Ảnh nhỏ 3"
+            class="thumbnail"
+            onclick="changeImage('image/namhuong3.png')" />
+          <img
+            src="image/namhuong.png"
+            alt="Ảnh nhỏ"
+            class="thumbnail"
+            onclick="changeImage('image/namhuong.png')" />
+        </div>
+      </div>
+      <div class="product-info">
+        <h2>Nấm hương tươi Green Kingdom 250gr</h2>
+        <span class="status">Trạng thái : </span>
+        <button class="availability">
+          <i class="fas fa-check"></i>
+          Còn hàng
+        </button>
+        <!-- Thêm trạng thái còn hàng -->
+        <p class="price">60.000đ</p>
+        <p>
+          Vị ngọt tự nhiên, giàu dinh dưỡng. - Nấm chứa đạm tốt. Thay thế đạm
+          động vật được tuy nhiên Nấm là nguồn năng lượng tối, nên ăn vừa phải,
+          vì nấm gây trì trệ. - Nấm Green Kingdom đa dạng với các loại nấm ngon,
+          được trồng và chăm sóc bởi các chuyên gia kinh nghiệm và nói không với
+          các chất bảo quản.
+        </p>
+        <p class="type">Loại sản phẩm: <span>rau quả</span></p>
+        <button class="btn" onclick="addToCart()">Thêm vào Giỏ Hàng</button>
+        <button class="btn" onclick="buyNow()">Mua Ngay</button>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>O&F Mart <i class="fas fa-shopping-basket"></i></h3>
+          <p>
+            Luôn cam kết mang lại những thực phẩm tươi ngon , hoàn toàn được
+            nuôi trồng theo phương pháp organic để mang lại cho khách hàng một
+            cuộc sống xanh!
+          </p>
+          <div class="share">
+            <a
+              href="https://www.facebook.com/profile.php?id=100018045165228"
+              class="fab fa-facebook-f"></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100018045165228"
+              class="fab fa-twitter"></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100018045165228"
+              class="fab fa-instagram"></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100018045165228"
+              class="fab fa-linkedin"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>thông tin liên hệ</h3>
+          <a href="" class="links">
+            <i class="fas fa-phone"></i> +123-456-7890
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-phone"></i> +111-222-3333
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-envelope"></i> O&Fmart@gmail.com
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-map-marker-alt"></i> Yên Nghĩa, Hà Đông, Hà Nội,
+            Việt Nam
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>Liên kết nhanh</h3>
+          <a href="./index.html" class="links">
+            <i class="fas fa-arrow-right"></i> home
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> features
+          </a>
+          <a href="./product.html" class="links">
+            <i class="fas fa-arrow-right"></i> products
+          </a>
+          <a href="./about-us.html" class="links">
+            <i class="fas fa-arrow-right"></i> About Us
+          </a>
+          <a href="./review.html" class="links">
+            <i class="fas fa-arrow-right"></i> review
+          </a>
+          <a href="./blogs.html" class="links">
+            <i class="fas fa-arrow-right"></i> blogs
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>Bản Tin</h3>
+          <p>đăng kí để nhận cập nhật mới nhất từ chúng tôi</p>
+          <input type="email" placeholder="your email" class="email" />
+          <input type="submit" value="subscribe" class="btn" />
+          <img src="image/payment.png" class="payment-img" alt="" />
+        </div>
+      </div>
+
+    </section>
+
+    footer section ends
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    custom js file link
+    <script src="js/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var likeIcon = document.querySelector(
+          ".product-home-item_action-like-icon-emty"
+        );
+
+        likeIcon.addEventListener("click", function () {
+          likeIcon.classList.toggle("like-red");
+        });
+      });
+    </script>
+    <script>
+      function changeImage(imageUrl) {
+        const largeImage = document.getElementById("largeImage");
+        largeImage.src = imageUrl;
+      }
+
+      // Mã JavaScript cho chức năng giỏ hàng
+      function addToCart() {
+        alert("Đã thêm vào giỏ hàng!");
+        // Thêm logic để xử lý thêm vào giỏ hàng
+      }
+
+      function buyNow() {
+        alert("Chuyển hướng đến thanh toán!");
+        // Thêm logic để xử lý mua ngay
+      }
+    </script>
+  </body>
+</html>

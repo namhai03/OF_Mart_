@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/logo.ico" type="image/x-icon">
+    <title>Thanh toán</title>
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/cash.css">
+    <script src="./js/cash.js"></script>
+</head>
+<body>
+    <header class="header">
+
+        <a href="./index.html" class="logo"> <i class="fas fa-shopping-basket"></i> O&F Mart </a>
+
+        <nav class="navbar">
+            <a href="./index.html">Trang chủ</a>
+            <a href="./product.html">Sản phẩm</a>
+            <a href="./review">Đánh giá</a>
+            <a href="./blogs.html">blogs</a>
+            <a href="./contact.html">Liên hệ</a>
+          </nav>
+
+        <div class="icons">
+            <a href="./login.html">
+                <div class="fas fa-user" id="login-btn"></div>
+            </a>
+        </div>
+
+
+    </header>
+
+    <div class="container-cart">
+
+        <section class="section-cart">
+            <div class="header-cart">
+                <ul>
+                    <li style="flex:2">Sản phẩm</li>
+                    <li style="flex:3">Tên sản phẩm</li>
+                    <li style="flex:2">Đơn giá</li>
+                    <li style="flex:1.5">Số lượng</li>
+                    <li style="flex:2">Thành tiền</li>
+                    <li style="flex:1">Xóa</li>
+                </ul>
+            </div>
+
+            <div class="cart-body">
+                <div class="item-cart">
+                    <div class="img-item canchinh">
+                        <img src="image/cart-img-1.png" alt="">
+                    </div>
+                    <p class="item-name canchinh">Dưa hấu</p>
+                    <div class="item-price canchinh">
+                        <span class="item-price-original">4.666 đ </span>
+                        <span class="item-price-sale">1.444 đ</span>
+                    </div>
+                    <div class="item-quantity canchinh">
+                        <input type="number" value="1">
+                    </div>
+                    <span class="item-total-price canchinh">5000 đ</span>
+                    <div class="delete-item canchinh" onclick="deleteItem(this)">  
+                        <ion-icon name="trash-outline"></ion-icon>
+                    </div>
+                </div>
+                
+                <div class="item-cart">
+                    <div class="img-item canchinh">
+                        <img src="image/cart-img-2.png" alt="">
+                    </div>
+                    <p class="item-name canchinh">Hành Tây</p>
+                    <div class="item-price canchinh">
+                        <span class="item-price-original">4.666 đ </span>
+                        <span class="item-price-sale">1.444 đ</span>
+                    </div>
+                    <div class="item-quantity canchinh">
+                        <input type="number" value="1">
+                    </div>
+                    <span class="item-total-price canchinh">5000 đ</span>
+                    <div class="delete-item canchinh" onclick="deleteItem(this)">  
+                        <ion-icon name="trash-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="item-cart">
+                    <div class="img-item canchinh">
+                        <img src="image/cart-img-3.png" alt="">
+                    </div>
+                    <p class="item-name canchinh">Gà</p>
+                    <div class="item-price canchinh">
+                        <span class="item-price-original">4.666 đ </span>
+                        <span class="item-price-sale">1.444 đ</span>
+                    </div>
+                    <div class="item-quantity canchinh">
+                        <input type="number" value="1">
+                    </div>
+                    <span class="item-total-price canchinh">5000 đ</span>
+                    <div class="delete-item canchinh" onclick="deleteItem(this)">  
+                        <ion-icon name="trash-outline"></ion-icon>
+                    </div>
+                </div>
+                
+            
+                <div class="total-price">
+                    <span class="total-price-char">Tổng tiền:</span>
+                    <span class="total-price-num">95.346 đ</span>
+                </div>
+            </div>
+            <div class="order">
+                <a href="./index.html"><button class="order-0">TIẾP TỤC MUA HÀNG</button></a>
+                <a href="./payment.html"><button class="order-1">ĐẶT HÀNG</button></a>
+            </div>
+        </section>
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    
+</body>
+</html>
